@@ -1,0 +1,9 @@
+{
+	"script": "dist/bundle.js",
+	"data": {
+		"src": "data/",
+		"prefix": "store:/",
+		"partitions": []
+	},
+	"name": "test"
+}
