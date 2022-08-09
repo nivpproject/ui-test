@@ -1,7 +1,9 @@
 
 const usePartition = (name, prefix = "store://", dataFolder = "data/") => {
+	scene.loadPartition(name);
 	return {
-		prefix: prefix + dataFolder,
+		name,
+		prefix: prefix + dataFolder + "/",
 		get: (filename) => {
 			return prefix + dataFolder + name + "/" + filename;
 		}
